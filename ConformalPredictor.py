@@ -30,8 +30,7 @@ class ConformalPredictor:
     # --------------------------------
     def standard_cp(self, pred_calib, y_calib, pred_test, y_test):
         """
-        Compute split conformal prediction intervals using absolute residuals 
-        from a held-out calibration set.
+        Compute split conformal prediction intervals using absolute residuals.
 
         Parameters
         ----------
@@ -129,8 +128,7 @@ class ConformalPredictor:
         Compute adaptive conformal prediction intervals using online conformal adjustment.
 
         This method adapts the interval size per test point based on previous prediction success, 
-        increasing or decreasing the width dynamically via a learning rate (gamma). Especially useful 
-        for non-stationary or time-ordered data.
+        increasing or decreasing the width dynamically via a learning rate (gamma). 
 
         Parameters
         ----------
