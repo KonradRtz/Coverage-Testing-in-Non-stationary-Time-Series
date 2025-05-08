@@ -80,7 +80,7 @@ data/
 | **1. Marginal Coverage**      | Is average coverage close to target α?   | • Binomial Test (Lower) <br> • Binomial Test (Upper) <br> • Binomial Test (Two-sided) <br> • First Geometric Test (for parameter \(a\)) |
 | **2. Violation Independence** | Are violations temporally independent?            | • Second Geometric Test (for parameter \(b\)) |
 | **3. Conditional Coverage**   | Are violations predictable from inputs?           | • Joint Geometric Test (for \(a\) and \(b\)) <br> • Dynamic Binary Test |
-| **4. Interval Score Comparison** | Are intervals both valid and sharp?               | • Comparative Interval-Score Test (Diebold-Mariano) |
+| **4. Interval Score Comparison** | Are intervals both valid and efficient?               | • Comparative Interval-Score Test (Diebold-Mariano) |
 
 ---
 
