@@ -2,25 +2,25 @@
 
 This repository accompanies the following **submitted manuscript**:
 
-**🎓 Title:**  
+**Title:**  
 _**Testing Marginal and Conditional Coverage in Non-Stationary Time Series Forecasts through VaR Backtesting**_  
 **Author:** Konrad Retzlaff  
-📄 **Manuscript submission planned for CoPA 2025 on Saturday, May 11, 2025**  
+**Manuscript submission planned for CoPA 2025 on Saturday, May 17, 2025**  
 
 ---
 
-## 🔍 Project Summary
+## Project Summary
 
 This project introduces a **statistical testing framework** for evaluating **Conformal Prediction (CP)** under **non-stationary time series**. Inspired by Value-at-Risk (VaR) backtesting, we assess CP methods using **formal hypothesis tests** for marginal validity, temporal independence, and conditional coverage.
 
 We evaluate CP methods on:
-- ✅ **Synthetic data** with changepoints and drift *(Barber et al., 2023)*
-- ⚡ **Electricity price forecasts** (ELEC2 dataset from Kaggle)
-- 📈 **S&P 100 stock forecasts** (retrieved from Yahoo Finance API)
+- **Synthetic data** with changepoints and drift *(Barber et al., 2023)*
+- **Electricity price forecasts** (ELEC2 dataset from Kaggle)
+- **S&P 100 stock forecasts** (retrieved from Yahoo Finance API)
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 data/
@@ -45,7 +45,7 @@ data/
 
 ---
 
-## 🗂 Repository Files
+## Repository Files
 
 | File                     | Description |
 |--------------------------|-------------|
@@ -60,7 +60,7 @@ data/
 
 ---
 
-## 🧠 CP Methods Used
+## CP Methods Used
 
 ### Synthetic & ELEC2 (Barber et al., 2023)
 - **CP+LS**: Full Conformal Prediction with Least Squares
@@ -74,7 +74,7 @@ data/
 
 ---
 
-## 📊 Statistical Tests (8 total, grouped in 4 categories)
+## Statistical Tests (8 total, grouped in 4 categories)
 
 | Category                      | Purpose                                           | Included Tests |
 |-------------------------------|---------------------------------------------------|----------------|
@@ -85,7 +85,7 @@ data/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/KonradRtz/Coverage-Testing-in-Non-stationary-Time-Series.git
@@ -98,13 +98,13 @@ Dependencies include:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
-### 🧪 Synthetic Data
+### Synthetic Data
 Run `Synthetic_data.ipynb` to evaluate CP+LS, NexCP+LS, and NexCP+WLS.  
 Default predictions are included in `data/Synthetic Data/`.
 
-> 🔄 **Alternative**: You may regenerate synthetic predictions using the official implementation by Barber et al.:  
+> **Alternative**: You may regenerate synthetic predictions using the official implementation by Barber et al.:  
 > [https://rinafb.github.io/code/nonexchangeable_conformal.zip](https://rinafb.github.io/code/nonexchangeable_conformal.zip)  
 > Convert the output to:
 > ```
@@ -113,25 +113,25 @@ Default predictions are included in `data/Synthetic Data/`.
 
 ---
 
-### ⚡ Electricity Forecasts (ELEC2)
+### Electricity Forecasts (ELEC2)
 Run `Elec_data.ipynb` using files in `data/ELEC2/`.  
 You may optionally regenerate predictions using the same external code and formatting as above.
 
 ---
 
-### 📈 Financial Forecasts
+### Financial Forecasts
 1. Train forecasting model in `Modeltrainer.ipynb`  
 2. Evaluate with Split CP, CQR, and ACI in `Calib_Analysis.ipynb` using Yahoo Finance-based data
 
 ---
 
-## 📈 Output
+## Output
 
 Results include full statistical test reports, p-values, and interval score comparisons per method.
 
 ---
 
-## 📚 References
+## References
 
 - **Barber, Candès, Ramdas, Tibshirani (2023)**  
   _Conformal Prediction Beyond Exchangeability_  
@@ -150,20 +150,6 @@ Results include full statistical test reports, p-values, and interval score comp
 
 ---
 
-## 📬 Contact
+## Contact
 
-📧 [kretzlaff.student@maastrichtuniversity.nl](mailto:kretzlaff.student@maastrichtuniversity.nl)
-
----
-
-## 📌 Citation (once accepted)
-
-```bibtex
-@inproceedings{retzlaff2025coverage,
-  title={Testing Marginal and Conditional Coverage in Non-Stationary Time Series Forecasts through VaR Backtesting},
-  author={Retzlaff, Konrad},
-  booktitle={Conformal and Probabilistic Prediction with Applications},
-  year={2025},
-  publisher={PMLR}
-}
-```
+[kretzlaff.student@maastrichtuniversity.nl](mailto:kretzlaff.student@maastrichtuniversity.nl)
