@@ -56,7 +56,6 @@ data/
 | `Modeltrainer.ipynb`    | Trains LightGBM model on S&P 100 stock return data |
 | `Calib_Analysis.ipynb`  | Applies Split CP, CQR, ACI and all tests to financial data |
 | `requirements.txt`      | Python packages needed to reproduce results |
-| `COPA2025_Paper_ConformalPrediction (14).pdf` | Draft of the submitted paper |
 
 ---
 
@@ -78,7 +77,7 @@ data/
 
 | Category                      | Purpose                                           | Included Tests |
 |-------------------------------|---------------------------------------------------|----------------|
-| **1. Marginal Coverage**      | Is average coverage close to target \(\alpha\)?   | • Binomial Test (Lower) <br> • Binomial Test (Upper) <br> • Binomial Test (Two-sided) <br> • First Geometric Test (for parameter \(a\)) |
+| **1. Marginal Coverage**      | Is average coverage close to target α?   | • Binomial Test (Lower) <br> • Binomial Test (Upper) <br> • Binomial Test (Two-sided) <br> • First Geometric Test (for parameter \(a\)) |
 | **2. Violation Independence** | Are violations temporally independent?            | • Second Geometric Test (for parameter \(b\)) |
 | **3. Conditional Coverage**   | Are violations predictable from inputs?           | • Joint Geometric Test (for \(a\) and \(b\)) <br> • Dynamic Binary Test |
 | **4. Interval Score Comparison** | Are intervals both valid and sharp?               | • Comparative Interval-Score Test (Diebold-Mariano) |
