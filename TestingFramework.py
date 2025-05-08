@@ -51,7 +51,6 @@ def binomial_test(violation_series, alpha):
 def geometric_conformal_test(violation_series, alpha):
     """
     Perform a geometric test for Conformal Prediction violations using run-length modeling.
-    This test is analogous to Christoffersen's UC, IND, and Joint tests.
 
     Parameters
     ----------
