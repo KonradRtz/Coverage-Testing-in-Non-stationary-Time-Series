@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-from collections import deque
 
 class ConformalPredictor:
     def __init__(self, alpha=0.1):
