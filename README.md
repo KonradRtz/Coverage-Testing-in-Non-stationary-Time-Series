@@ -3,7 +3,7 @@
 This repository accompanies the following **submitted manuscript**:
 
 **Title:**  
-_**Testing Marginal and Conditional Coverage in Non-Stationary Time Series Forecasts through VaR Backtesting**_  
+_**Testing Marginal and Conditional Coverage in Non-Stationary Time Series Forecasts through Value-at-Risk Backtesting**_  
 **Author:** Konrad Retzlaff  
 **Manuscript submission planned for CoPA 2025 on Saturday, May 17, 2025**  
 
