@@ -147,7 +147,7 @@ def geometric_conformal_test(violation_series, alpha, eps: float = 1e-12):
         return logL
 
     # ─── Log-likelihoods under null / alternatives ────────────────────────────
-    ll_null  = loglike(alpha, 1.0)                              # geometric
+    ll_null  = loglike(alpha, 1.0)                              
     ll_uc    = -minimize(lambda a: -loglike(a[0], 1.0),
                          x0=[alpha], bounds=[(eps, 1 - eps)]).fun
     ll_joint = -minimize(lambda p: -loglike(p[0], p[1]),
