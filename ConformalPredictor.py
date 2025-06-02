@@ -3,9 +3,11 @@ import pandas as pd
 
 class ConformalPredictor:
     def __init__(self, alpha=0.1):
+        # Initialize the conformal predictor with target coverage rate alpha.
         self.alpha = alpha
 
     def _make_final_dataframe(self, lower_bounds, upper_bounds, y_true, violations):
+        # Helper function to create a DataFrame with the results and add lagged features.
         df = pd.DataFrame({
             'lower_bound': lower_bounds,
             'upper_bound': upper_bounds,
