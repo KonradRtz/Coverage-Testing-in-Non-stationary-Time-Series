@@ -297,7 +297,6 @@ def dynamic_binary_regression_test(
     return p_ind, p_cc
 
 
-
 # ---------------------------
 # Diebold-Mariano Interval-Score Test
 # ---------------------------
@@ -349,13 +348,17 @@ def diebold_mariano_test(
     h_lag = int(np.floor(n ** (1 / 3)))
 
     # Interval Scores (lower is better)
-    S1 = (upper_bounds1 - lower_bounds1) 
-    + (2 / alpha) * (y_true - upper_bounds1) * (y_true > upper_bounds1) 
+    S1 = (
+    (upper_bounds1 - lower_bounds1)
+    + (2 / alpha) * (y_true - upper_bounds1) * (y_true > upper_bounds1)
     + (2 / alpha) * (lower_bounds1 - y_true) * (y_true < lower_bounds1)
+    )
 
-    S2 = (upper_bounds2 - lower_bounds2)  
-    + (2 / alpha) * (y_true - upper_bounds2) * (y_true > upper_bounds2) 
-    + (2 / alpha) * (lower_bounds2 - y_true) * (y_true < lower_bounds2)
+    S2 = (
+        (upper_bounds2 - lower_bounds2)
+        + (2 / alpha) * (y_true - upper_bounds2) * (y_true > upper_bounds2)
+        + (2 / alpha) * (lower_bounds2 - y_true) * (y_true < lower_bounds2)
+    )
 
     # Loss differential
     d = S1 - S2
